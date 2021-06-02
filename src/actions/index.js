@@ -57,10 +57,6 @@ const fetchWeather = (city) => dispatch => {
 
   fetch(`${weatherURL}forecast/daily?lat=${latitude}&lon=${longitude}`, {
     "method": "GET",
-    "headers": {
-      "x-rapidapi-key": "3a2e0d5435msha0a1d55657eb16fp11f105jsna359e56a9568",
-      "x-rapidapi-host": "weatherbit-v1-mashape.p.rapidapi.com"
-    }
   })
   .then(response => {
     console.log(response);
